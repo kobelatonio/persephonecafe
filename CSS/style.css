@@ -1,0 +1,1957 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+html {
+    font-size: 1.5vw;
+}
+
+body {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*** NAVIGATION BAR ***/
+
+nav {
+    padding: 2vw 5vw 0vw;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 0.55rem;
+    color: white;
+    transition: all .4s ease;
+}
+
+.menu ul li a, .location ul li a, .about ul li a, .careers ul li a, .contact ul li a {
+    color: #1A1A1A;
+}
+
+nav a.active, nav ul li a:hover {
+    color: #FCEE21;
+}
+
+nav a.index-active:hover {
+    color: #fff;
+}
+
+.menu ul li a:hover, .menu ul li .active {
+    color: #40C900;
+}
+
+.location ul li a:hover, .location ul li .active {
+    color: #9500C6;
+}
+
+.about ul li a:hover, .about ul li .active {
+    color: #BC990A;
+}
+
+.careers ul li a:hover, .careers ul li .active {
+    color: #4F4F8E;
+}
+
+.contact ul li a:hover, .contact ul li .active {
+    color: #008435;
+}
+
+nav ul li .logo {
+    width: 7.5vw;
+}
+
+nav p, nav .toggle {
+    display: none;
+}
+
+nav p.nav {
+    font-style: italic;
+}
+
+/*** HEADER ***/
+
+header, .instagram, .careers-index, .about .project .left-img, .contact-index, .about .percy-left, .location .column, .about div.project .right-img, .about .vibes .right-img, .about .heart, .contact .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header.index {
+    width: 100%;
+    height: 110vh;
+    background-image: url('../IMG/index/background.jpg');
+    text-align: center;
+    position: relative;
+}
+
+header.index h1 {
+    padding-top: 35vh;
+    font-style: italic;
+    color: white;
+    font-size: 1.75rem;
+}
+
+/*** INTRODUCTION ***/
+
+.intro {
+    padding: 10vw 12vw;
+    text-align: center;
+    color: #7F0099;
+}
+
+.intro .logo {
+    width: 9vw;
+    margin-bottom: 1vw;
+}
+
+.intro h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
+.intro h3, .intro .left h2, .intro .right h2 {
+    font-size: 1.25rem;
+    letter-spacing: 0.01rem;
+    font-weight: 500;
+}
+
+.intro h3 {
+    margin: 0.5vw 0 10vw;
+}
+
+.intro .container {
+    display: flex;
+    gap: 10vw;
+    align-items: flex-end;
+}
+
+.intro .left, .intro .right {
+    flex: 1;
+}
+
+.intro .left h2 {
+    margin: 5vw 0 5vw;
+}
+
+.intro .right h2 {
+    margin-bottom: 6vw;
+}
+
+.intro .left div, .intro .right div {
+    position: relative;
+}
+
+.intro .left .flower {
+    position: absolute;
+    left: -5vw;
+    bottom: -3vw;
+    width: 10vw;
+}
+
+.intro .right .flower {
+    position: absolute;
+    right: -5.5vw;
+    top: -5vw;
+    width: 10vw;
+}
+
+.intro a div, .location-index a div, .about-index a div, .careers-index a div, .contact-index a div {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    letter-spacing: 0.175rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    transition: all .4s ease;
+    padding: 0.9vw 1.8vw;
+}
+
+.intro a div {
+    border: 0.2vw solid #7F0099;
+    color: #7F0099;
+    margin-bottom: 5vw;
+}
+
+.intro a div:hover {
+    background: #7F0099;
+    color: #fff;
+}
+
+/***** BESTSELLERS *****/
+
+.bestsellers {
+    background-color: #C9EFB9;
+    padding: 3vw 18vw 2vw;
+}
+
+.bestsellers .container {
+    position: relative;
+    background: #C9EFB9;
+}
+
+.bestsellers .bestseller .container {
+    display: flex;
+    align-items: center;
+}
+
+.bestsellers .bestseller .left {
+    flex: 0 0 40%;
+}
+
+.bestsellers .bestseller .right {
+    flex: 0 0 60%;
+    text-align: center;
+    padding: 3vw;
+}
+
+.bestsellers h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.bestsellers h2 {
+    font-size: 0.7rem;
+    margin: 1.25vw 0 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4rem;
+    letter-spacing: 0.05rem;
+}
+
+.bestsellers .dots {
+    width: 40%;
+    display: flex;
+    gap: 2.5vw;
+    justify-content: center;
+    padding-top: 1vw;
+}
+
+.bestsellers .dots .dot {
+    height: 0.6vw;
+    width: 0.6vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 1.5s ease;
+}
+
+.bestsellers .dots .active {
+    background-color: #333;
+}
+
+.bestsellers .bestseller {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.bestsellers .prev, .bestsellers .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;    
+    transform: translate(0, -50%);
+    padding: 1vw;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: 0.4s ease;
+}
+
+.bestsellers .prev {
+    left: -4vw;
+}
+
+.bestsellers .next {
+    right: -4vw;
+}
+
+.bestsellers .prev:hover, .bestsellers .next:hover {
+    color: #bbb;
+}
+
+/*** LOCATION INDEX ***/
+
+.location-index {
+    padding: 12.5vw 27.5vw;
+    background-color: #F9E8F8;
+}
+
+.location-index .container {
+    position: relative;
+}
+
+.location-index .center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.location-index .center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.location-index .flower1 {
+    width: 15vw;
+    position: absolute;
+    left: -6vw;
+    top: -5vw;
+}
+
+.location-index .flower2 {
+    width: 15vw;
+    position: absolute;
+    right: -6vw;
+    bottom: -5vw;
+}
+
+.location-index h1 {
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 0.01rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    padding: 0 12vw 5vw;
+}
+
+.location-index a div, .careers-index a div {
+    border: 0.2vw solid white;
+    color: white;
+}
+
+.location-index a div:hover, .careers-index a div:hover {
+    background: #fff;
+    color: #7F0099;
+}
+
+/*** ABOUT INDEX ***/
+
+.about-index {
+    padding: 15vw;
+    background-color: #C9EFB9;
+}
+
+.about-index .container {
+    display: flex;
+	gap: 4vw;
+    align-items: flex-end;
+    position: relative;
+}
+
+.about-index .flower1 {
+    position: absolute;
+    width: 20vw;
+    left: -10vw;
+    bottom: -10vw;
+    z-index: 1;
+}
+
+.about-index .flower2 {
+    position: absolute;
+    width: 20vw;
+    top: -10vw;
+    right: -10vw;
+    z-index: 1;
+}
+
+.about-index .container .left {
+    flex: 4;
+}
+
+.about-index .container .right {
+    text-align: right;
+    flex: 5;
+}
+
+.about-index .flower {
+    position: relative;
+}
+
+.about-index img {
+    position: relative;
+    z-index: 5;
+}
+
+.about-index .container h2 {    
+    font-size: 1.25rem;
+    letter-spacing: 0.01rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.about-index .container .left h2 {    
+    padding-bottom: 3vw;
+}
+
+.about-index .container .right h2 {    
+    padding: 3vw 0 0;
+}
+
+.about-index a div, .contact-index a div {
+    border: 0.2vw solid #333333;
+    color: #333333;
+}
+
+.about-index a div:hover, .contact-index a div:hover {
+    background: #333;
+    color: #C9EFB9;
+}
+
+/*** INSTAGRAM ***/
+
+.instagram {
+    background-image: url('../SVG/index/instagram-background.svg');
+    text-align: center;
+    padding: 10vw;
+}
+
+.instagram .container {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.instagram a {
+    flex: 1 0 25%;
+    transition: all 0.4s ease;
+}
+
+.instagram a:hover {
+    opacity: 0.8;
+}
+
+.instagram h1 {
+    padding-bottom: 5vw;
+    font-size: 1.75rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
+/*** EVENTS ***/
+
+.events {
+    background-color: #F3F3F3;
+    background-image: url('../SVG/index/events-background.svg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 10vw;
+}
+
+.events h1 {
+    font-size: 7rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    color: #D0D0D0;
+    line-height: 7rem;
+}
+
+.events .container {
+    display: grid;
+	gap: 2vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.events .container .event {
+    flex: 1 0 25%;
+    background: white;
+    transition: all .4s ease;
+}
+
+.events .container .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50%;
+}
+
+.events .container .one .image {background-image: url('../IMG/index/event1.png');}
+.events .container .two .image {background-image: url('../IMG/index/event2.png');}
+.events .container .three .image {background-image: url('../IMG/index/event3.png');}
+.events .container .four .image {background-image: url('../IMG/index/event4.png');}
+.events .container .five .image {background-image: url('../IMG/index/event5.png');}
+.events .container .six .image {background-image: url('../IMG/index/event6.png');}
+
+.events .container .event .content {
+    padding: 1vw;
+}
+
+.events .event .content h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.events .event .content h4 {
+    font-size: 0.5rem;
+    margin: 0.5vw 0;
+    font-weight: 600;
+    color: #7F7F7F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.events .event .content h5 {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+    font-weight: 500;
+    color: #9B9B9B;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.events .event:hover {
+    opacity: 0.8;
+}
+
+/*** CAREERS INDEX ***/
+
+.careers-index {
+    width: 100%;
+    background-image: url('../IMG/index/background-careers.jpg');
+    text-align: center;
+    color: white;
+    padding: 10vw;
+}
+
+.careers-index .logo {
+    width: 10vw;
+    margin-bottom: 2vw;
+}
+
+.careers-index h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+}
+
+.careers-index p {
+    font-size: 1.25rem;
+    letter-spacing: 0.01rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin: 3vw 21vw 4vw;
+}
+
+.careers-index a {
+    color: white;
+}
+
+/*** CONTACT INDEX ***/
+
+.contact-index {
+    width: 100%;
+    padding: 5vw;
+    background-image: url('../IMG/index/background-contact.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.contact-index h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    color: #333333;
+}
+
+.contact-index p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    color: #333333;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 25vw;
+}
+
+.contact-index a {
+    color: #333333;
+}
+
+/*** MENU ***/
+
+.menu {
+    background: #C9EFB9;
+    text-align: center;
+}
+
+.menu .container {
+    padding: 0 17vw;
+}
+
+h1.title {
+    padding: 15vw 0 5vw;
+    font-style: italic;
+    font-size: 2.5rem;
+    letter-spacing: 0.05rem;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+.menu .row {
+    display: flex;
+}
+
+.menu .row .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    flex: 0 0 50%;
+    padding: 1vw;
+}
+
+.menu .image h2 {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+}
+
+.menu .one .image {background-image: url('../IMG/menu/menu1.jpg');}
+.menu .two .image {background-image: url('../IMG/menu/menu2.jpg');}
+.menu .three .image {background-image: url('../IMG/menu/menu3.jpg');}
+.menu .four .image {background-image: url('../IMG/menu/menu4.jpg');}
+.menu .five .image {background-image: url('../IMG/menu/menu5.jpg');}
+.menu .six .image {background-image: url('../IMG/menu/menu6.jpg');}
+.menu .seven .image {background-image: url('../IMG/menu/menu7.jpg');}
+.menu .eight .image {background-image: url('../IMG/menu/menu8.jpg');}
+
+.menu .content {
+    flex: 0 0 50%;
+    background: #EDEDED;
+    text-align: left;
+    padding: 1.5vw;
+}
+
+.menu .content h2 {
+    font-style: italic;
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 1.5vw;
+}
+
+.menu h3 {
+    font-size: 0.7rem;
+    color: #333333;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+    margin-top: 1.2vw;
+}
+
+.menu .price {
+    font-size: 0.7rem;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.menu h4 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1rem;
+    color: #333333;
+}
+
+/*** LOCATION ***/
+
+.location {
+    background: #EBD9F9;
+    text-align: center;
+}
+
+.location section {
+    padding: 0 10vw;
+}
+
+.location .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+
+.location .column {
+    padding-top: 60%;
+}
+
+.location .one {background-image: url('../IMG/location/loc1.jpg');}
+.location .two {background-image: url('../IMG/location/loc2.jpg');}
+.location .three {background-image: url('../IMG/location/loc3.jpg');}
+.location .four {background-image: url('../IMG/location/loc4.jpg');}
+
+.location .desc1 {
+    margin: 10vw 35vw 5vw 5vw;
+    position: relative;
+}
+
+.location .flower1 {
+    width: 7vw;
+    position: absolute;
+    left: 2vw;
+    bottom: 1vw;
+}
+
+.location .desc2 {
+    margin: 0 5vw 8vw 25vw;
+    position: relative;
+}
+
+.location .flower2 {
+    width: 7vw;
+    position: absolute;
+    right: 0vw;
+    bottom: 1vw;
+}
+
+.location h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5rem;
+    z-index: 5;
+    position: relative;
+}
+
+.location h2.question {
+    padding: 10vw 0 5vw;
+}
+
+.location span {
+    color: #9414AF;
+    font-weight: 500;
+}
+
+.location img.direction {
+    padding: 0 12vw 3vw;
+}
+
+.location .directions {
+    padding: 0 12vw;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 6fr;
+    gap: 1.5vw;
+}
+
+.location .text h2 {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/*** ABOUT ***/
+
+.about {
+    background: #F9EFC5;
+    text-align: center;
+}
+
+.about p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+    color: #333;
+    z-index: 10;
+    position: relative;
+}
+
+.about .statue {
+    padding: 0 20vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 1vw;
+}
+
+.about span {
+    font-weight: 500;
+    color: #847225;
+}
+
+.about .owner {
+    padding: 5vw 8vw 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5vw;
+}
+
+.about .owner .image {
+    position: relative;
+}
+
+.about .persephone {
+    width: 20vw;
+    position: absolute;
+    left: -10vw;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.about .filipino {
+    margin: 0 24vw;
+    position: relative;
+}
+
+.about .filipino .quote1 {
+    position: absolute;
+    width: 5vw;
+    left: -8vw;
+    top: 3vw;
+}
+
+.about .filipino .quote2 {
+    transform: rotate(180deg);
+    position: absolute;
+    width: 5vw;
+    right: -8vw;
+    bottom: 3vw;
+}
+
+.about .mural {
+    padding: 10vw 8vw 5vw;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 5vw;
+    position: relative;
+    align-items: center;
+}
+
+.about .mural .flower {
+    position: absolute;
+    right: 0;
+    bottom: -6vw;
+    width: 30vw;
+}
+
+.about .project {
+    padding: 0vw 8vw;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 5vw;
+    position: relative;
+    align-items: center;
+}
+
+.about .project .flower {
+    position: absolute;
+    left: 0;
+    top: -12vw;
+    width: 30vw;
+}
+
+.about .project img, .about .mural img {
+    z-index: 5;
+}
+
+.about .customers {
+    margin: 13vw 0 15vw;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+}
+
+.about .customers .middle {
+    padding: 10vw 3vw;
+    background: linear-gradient(0deg, rgba(130, 123, 96, 0.7), rgba(130, 123, 96, 0.7)), url('../IMG/about/customers.jpg');
+}
+
+.about .customers .side {
+    background: linear-gradient(0deg, rgba(249, 232, 162, 0.7), rgba(249, 232, 162, 0.7)), url('../IMG/about/customers.jpg');
+}
+
+.about .customers .side, .about .customers .middle {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about .customers p {
+    color: white;
+}
+
+.about .customers .lines1 {
+    position: absolute;
+    left: 0;
+    top: -5vw;
+    width: 100%;
+}
+
+.about .customers .lines2 {
+    position: absolute;
+    left: 0;
+    bottom: -6vw;
+    width: 100%;
+}
+
+.about .interiors {
+    padding: 0 8vw;
+    position: relative;
+}
+
+.about .interiors-left, .about .interiors-right {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    align-items: center;
+    gap: 4vw;
+}
+
+.about .interiors-right {
+    grid-template-columns: 3fr 4fr;
+    margin-top: 5vw;
+}
+
+.about .interiors .logo {
+    width: 12vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*** CAREERS ***/
+
+.careers {
+    background: #E6E6FC;
+    text-align: center;
+}
+
+.careers h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #4F4F8E;
+    padding: 0 17vw 7vw;
+}
+
+.careers .container {
+    padding: 0 15vw;
+}
+
+.careers .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.careers .row .content {
+    padding: 5vw;
+    text-align: left;
+}
+
+.careers .row embed {
+    width: 8vw;
+}
+
+.careers .row .content:nth-child(even) {
+    background: #F49F80;
+}
+
+.careers .row .content:nth-child(odd) {
+    background: #403A6D;
+}
+
+.careers .row h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #403A6D;
+    margin: 2vw 0 3vw;
+}
+
+.careers .row h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    color: #403A6D;
+}
+
+.careers .row .content:nth-child(even) h4, .careers .row .content:nth-child(even) h3 {
+    color: #403A6D;
+}
+
+.careers .row .content:nth-child(odd) h4, .careers .row .content:nth-child(odd) h3 {
+    color: #F49F80;
+}
+
+.careers .row .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.careers .one .image {background-image: url('../IMG/careers/career1.jpg');}
+.careers .two .image {background-image: url('../IMG/careers/career2.jpg');}
+.careers .three .image {background-image: url('../IMG/careers/career3.jpg');}
+.careers .four .image {background-image: url('../IMG/careers/career4.jpg');}
+
+/***** FOOTER *****/
+
+footer {
+    padding: 2.5vw;
+    background-color: #E0E0E0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+footer p, p.footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-size: 0.6rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+
+footer.second-footer {
+    padding: 6vw 0;
+    background: none;
+}
+
+/***** FORM *****/
+
+.contact {
+    background: #D6E5DD;
+    text-align: center;
+}
+
+.contact .image {
+    background-image: url('../IMG/contact/form.jpg');
+    width: 100%;
+}
+
+.contact .form {
+    padding: 0 13vw;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+.contact form {
+    background-color: #EFEFEF;
+    padding: 5vw;
+    text-align: left;
+}
+
+.contact h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+.contact form p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #738C7D;
+    margin-bottom: 0.5vw;
+}
+
+.contact input[type=text], .contact input[type=email], textarea {
+    width: 100%;
+    padding: 1vw;
+    margin-bottom: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    border: 0.01vw solid #757574;
+}
+
+::placeholder { 
+  color: #BBBCBB;
+  opacity: 1;
+}
+
+.submit {
+    text-align: right;
+}
+
+.submit input {
+    padding: 0.4vw 3vw;
+    background: #738C7D;
+	color: white;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/*** TABLETS ***/
+
+@media (max-width: 991px) {
+    html {
+        font-size: 2.2vw;
+    }
+    
+    body {
+        padding-top: 10vw;
+    }
+    
+    nav {
+        position: fixed;
+        background: #C9EFB9;
+        padding: 1.5vw;
+        box-shadow: 0 0 2vw rgba(0, 0, 0, 0.2);
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav ul li:nth-child(4) {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+        order: 1;
+    }
+    
+    nav ul li.item {
+        display: none;
+        order: 2;
+        color: black;
+        padding: 1vw;
+    }
+    
+    nav ul li.item a {
+        color: black;
+    }
+    
+    nav ul li.item a.index-active {
+        color: #6B996B;
+    }
+    
+    nav ul li.item a.menu-active {
+        color: #40C900;
+    }
+    
+    nav ul li.active-item {
+        display: block;
+        position: static;
+    }
+    
+    nav ul li p.nav {
+        display: block;
+        font-size: 1.5rem;
+        letter-spacing: 0.01rem;
+    }
+    
+    nav ul li p:nth-child(1) {
+        justify-self: flex-end;
+    }
+    
+    nav ul li p:nth-child(3) {
+        justify-self: flex-start;
+    }
+    
+    nav ul li .logo {
+        width: 9vw;
+        margin: 0;
+    }
+    
+    nav .toggle {
+        position: absolute;
+        right: 4vw;
+        top: 5vw;
+        display: block;
+    }
+    
+    nav .toggle h1 {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #6B996B;
+    }
+    
+    header.index {
+        height: 90vh;
+    }
+    
+    header.index h1 {
+        padding-top: 18vh;
+    }
+    
+    .intro {
+        padding: 10vw;
+    }
+    
+    .intro h3, .intro .left h2, .intro .right h2 {
+        font-size: 1.25rem;
+        letter-spacing: 0.01rem;
+        font-weight: 500;
+    }
+    
+    .bestsellers {
+        padding: 5vw 10vw 3vw;
+    }
+    
+    .bestsellers .dots {
+        padding-top: 2vw;
+        gap: 4vw;
+    }
+    
+    .bestsellers .prev {
+        left: -6vw;
+    }
+    
+    .bestsellers .next {
+        right: -6vw;
+    }
+    
+    .location-index {
+        padding: 10vw 20vw;
+    }
+
+    .location-index h1 {
+        padding: 0 10vw 5vw;
+    }
+    
+    .about-index {
+        padding: 10vw;
+    }
+    
+    .about-index .flower2 {
+        width: 15vw;
+        top: -7vw;
+        right: -8vw;
+    }
+    
+    .about-index .flower1 {
+        width: 15vw;
+        left: -7vw;
+        bottom: -7vw;
+    }
+    
+    .events h1 {
+        font-size: 6rem;
+        letter-spacing: 0.2rem;
+        line-height: 6rem;
+    }
+    
+    .careers-index p {
+        margin: 3vw 13vw 4vw;
+    }
+
+    .contact-index p {
+        padding: 0 15vw;
+    }
+
+    footer {
+        padding: 3.5vw;
+    }
+    
+    /*** MENU ***/
+    
+    h1.title {
+        padding: 10vw 0 8vw;
+    }
+    
+    .menu .container, .location section {
+        padding: 0 5vw;
+    }
+    
+    .menu .content {
+        padding: 3vw;
+    }
+    
+    .menu .content h2 {
+        margin-bottom: 3vw;
+    }
+    
+    .menu .image h2 {
+        bottom: 2.5vw;
+        left: 3vw;
+    }
+    
+    /*** LOCATION ***/
+    
+    .location nav {
+        background: #EBD9F9;
+    }
+    
+    .location nav .toggle h1 {
+        color: #9414AF;
+    }
+    
+    .location .desc1 {
+        margin: 15vw 18vw 5vw;
+    }
+    
+    .location .flower1 {
+        width: 10vw;
+        left: 1.5vw;
+    }
+    
+    .location .desc2 {
+        margin: 0 10vw 10vw;
+    }
+    
+    .location .flower2 {
+        width: 9vw;
+        bottom: 2vw;
+    }
+    
+    .location h2.question {
+        padding: 10vw 0 10vw;
+    }
+    
+    .location img.direction {
+        padding: 0 0 5vw;
+    }
+    
+    .location .directions {
+        padding: 0 0 5vw;
+    }
+    
+    /*** ABOUT ***/
+    
+    .about nav {
+        background: #F9EFC5;
+    }
+    
+    .about nav .toggle h1 {
+        color: #D6C785;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+    
+    .about .statue {
+        padding: 0 10vw;
+    }
+    
+    .about .owner {
+        align-items: flex-end;
+        padding: 10vw 8vw 10vw;
+    }
+    
+    .about .persephone {
+        width: 20vw;
+        left: 50%;
+        top: -10vw;
+        transform: translate(-50%, 0);
+    }
+    
+    .about .filipino {
+        margin: 0 15vw;
+    }
+    
+    .about .mural {
+        padding: 10vw 8vw 5vw 0;
+        gap: 8vw;
+    }
+    
+    .about .project {
+        padding: 0vw 0 0 8vw;
+        gap: 8vw;
+    }
+    
+    .about .customers {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    
+    .about .interiors {
+        padding: 0 8vw;
+    }
+    
+    .about .interiors-left, .about .interiors-right {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    p.footer {
+        font-size: 0.6rem;
+    }
+    
+    /*** CAREERS ***/
+    
+    .careers nav {
+        background: #E6E6FC;
+    }
+    
+    .careers nav .toggle h1 {
+        color: #4F4F8E;
+    }
+    
+    .careers h2 {
+        padding: 0 10vw 7vw;
+    }
+    
+    .careers .container {
+        padding: 0 5vw;
+    }
+    
+    /*** CONTACT ***/
+    
+    .contact nav {
+        background: #D6E5DD;
+    }
+    
+    .contact nav .toggle h1 {
+        color: #809E8C;
+    }
+    
+    .contact .form {
+        padding: 0 5vw;
+    }
+}
+
+/*** LANDSCAPE PHONES ***/
+
+@media (max-width: 767px) {
+    html {
+        font-size: 3.5vw;
+    }
+    
+    nav {
+        padding: 2vw;
+    }
+    
+    nav ul li .logo {
+        width: 13vw;
+    }
+    
+    nav ul li p.nav {
+        font-size: 1.1rem;
+    }
+    
+    nav .toggle {
+        top: 7vw;
+    }
+    
+    header.index h1 {
+        font-size: 2rem;
+    }
+    
+    .intro, .location-index, .about-index {
+        padding: 15vw;
+    }   
+    
+    .intro .container {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    
+    .intro .right {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .intro .right h2, .intro .left h2 {
+        margin: 10vw 0;
+    }
+    
+    .intro .right .flower {
+        top: auto;
+        right: -11vw;
+        bottom: -6vw;
+        width: 20vw;
+    }
+    
+    .intro .left .flower {
+        left: -9vw;
+        bottom: -9vw;
+        width: 20vw;
+    }
+    
+    .intro a div {
+        margin-bottom: 0;
+    }
+    
+    .intro a div, .location-index a div, .about-index a div, .careers-index a div, .contact-index a div {
+        font-size: 0.7rem;
+        padding: 1.5vw 3vw;
+    }
+    
+    .bestsellers {
+        padding: 15vw 15vw 10vw;
+    }
+    
+    .bestsellers .bestseller .container {
+        flex-direction: column;
+        gap: 5vw;
+    }
+    
+    .bestsellers .bestseller .right {
+        padding: 3vw 0;
+    }
+    
+    .bestsellers .next {
+        right: -10vw;
+    }
+    
+    .bestsellers .prev {
+        left: -10vw;
+    }
+    
+    .bestsellers h2 {
+        margin: 3vw 0;
+    }
+    
+    .bestsellers .dots {
+        width: 100%;
+        gap: 6vw;
+    }
+    
+    .bestsellers .dots .dot {
+        height: 1vw;
+        width: 1vw;
+    }
+    
+    .location-index h1 {
+        padding: 0 10vw 5vw;
+    }
+    
+    .location-index .flower1 {
+        width: 25vw;
+        left: -10vw;
+        top: -10vw;
+    }
+    
+    .location-index .flower2 {
+        width: 25vw;
+        right: -10vw;
+        bottom: -10vw;
+    }
+    
+    .about-index .container {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .about-index .container .left {
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+    }
+    
+    .about-index .container .left h2 {
+        padding: 10vw 0;
+    }
+    
+    .about-index .container .right h2 {
+        padding: 10vw 0 0;
+    }
+    
+    .about-index .flower1 {
+        width: 20vw;
+        left: -10vw;
+        bottom: -10vw;
+    }
+    
+    .about-index .flower2 {
+        width: 20vw;
+        top: auto;
+        right: -10vw;
+        bottom: -10vw;
+        transform: rotate(90deg);
+    }
+
+    .instagram .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .events {
+        background-position: top right;
+        background-size: 60%;
+        background-repeat: repeat-y;
+    }
+    
+    .events h1 {
+        font-size: 6rem;
+        line-height: 4rem;
+        padding-bottom: 5vw;
+    }
+
+    .events .container {
+        gap: 5vw;
+        grid-template-columns: 1fr;
+    }
+    
+    .events .container .event .content {
+        padding: 3vw;
+    }
+
+    .events .event .content h4 {
+        margin: 2vw 0;
+        font-size: 0.6rem;
+    }
+    
+    .careers-index {
+        padding: 15vw 5vw;
+    }
+    
+    .careers-index h1 {
+        padding: 0 10vw;
+        line-height: 2.5rem;
+    }
+
+    .careers-index p {
+        margin: 6vw 2vw 8vw;
+    }
+    
+    .contact-index {
+        padding: 15vw 10vw;
+        gap: 5vw;
+    }
+
+    .contact-index p {
+        padding: 0 5vw;
+    }
+    
+    /*** MENU ***/
+    
+    h1.title {
+        padding: 15vw 0 10vw;
+    }
+    
+    .menu .container, .location section {
+        padding: 0;
+    }
+    
+    .menu .row {
+        flex-direction: column;
+    }
+    
+    .menu .row .image {
+        padding-top: 100%;
+    }
+    
+    .menu .content {
+        padding: 10vw;
+    }
+    
+    .menu .row:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    
+    .menu .image h2 {
+        bottom: 10vw;
+        left: 10vw;
+    }
+    
+    .menu h3 {
+        margin-top: 4vw;
+    }
+    
+    .menu .content h2 {
+        margin-bottom: 6vw;
+    }
+
+    p.footer {
+        padding: 10vw 0;
+    }
+    
+    /*** LOCATION ***/
+    
+    .location .row {
+        grid-template-columns: 1fr;
+        gap: 0vw;
+    }
+    
+    .location h2 {
+        font-size: 1.2rem;
+    }
+    
+    .location .desc1 {
+        margin: 15vw 15vw 10vw;
+    }
+    
+    .location .flower1 {
+        width: 12vw;
+        left: 3vw;
+        bottom: 2vw;
+    }
+    
+    .location .desc2 {
+        margin: 0 5vw 10vw;
+    }
+    
+    .location .flower2 {
+        width: 12vw;
+    }
+    
+    .location .directions {
+        grid-template-columns: 1fr 6fr;
+        gap: 10vw 5vw;
+        padding: 10vw 15vw 5vw;
+    }
+    
+    /*** ABOUT ***/
+    
+    .about .statue {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 10vw;
+        padding: 0 10vw;
+    }
+    
+    .about .statue img {
+        width: 30%;
+    }
+    
+    .about .owner {
+        display: flex;
+        flex-direction: column;
+        gap: 30vw;
+    }
+    
+    .about .persephone {
+        width: 40vw;
+        top: -20vw;
+    }
+    
+    .about .mural, .about .project {
+        display: flex;
+        padding: 15vw 0;
+        flex-direction: column;
+        gap: 10vw;
+    }
+    
+    .about .mural p, .about .project p {
+        padding: 0 15vw;
+    }
+    
+    .about .mural .flower, .about .project .flower {
+        width: 50vw;
+    }
+    
+    .about .project {
+        padding: 0 0;
+    }
+    
+    .about .customers {
+        margin: 0 0 15vw;
+        grid-template-columns: 1fr;
+    }
+    
+    .about .customers .side {
+        padding-top: 100%;
+    }
+    
+    .about .customers .lines1, .about .customers .lines2 {
+        z-index: 15;
+    }
+    
+    .about .customers .middle {
+        padding: 20vw 15vw;
+    }
+    
+    .about .interiors {
+        padding: 0 10vw;
+    }
+    
+    .about .interiors-left, .about .interiors-right {
+        gap: 10vw;
+    }
+    
+    .about .interiors .logo {
+        width: 15vw;
+    }
+    
+    /*** CAREERS ***/
+    
+    .careers .container {
+        padding: 0;
+    }
+    
+    .careers h2 {
+        padding: 0 10vw 15vw;
+    }
+    
+    .careers .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .careers .row:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    .careers .row .image {
+        padding: 50%;
+    }
+    
+    .careers .row .content {
+        padding: 15vw 20vw;
+    }
+    
+    .careers .row h3 {
+        margin: 5vw 0;
+    }
+    
+    .careers .row embed {
+        width: 20vw;
+    }
+    
+    /*** CONTACT ***/
+
+    .contact .form {
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    
+    .contact form {
+        padding: 10vw;
+    }
+    
+    .contact h2 {
+        margin-bottom: 5vw;
+    }
+    
+    .contact input[type=text], .contact input[type=email], textarea {
+        margin-bottom: 5vw;
+        padding: 2vw;
+    }
+    
+    .contact form p {
+        margin-bottom: 1vw;
+    }
+    
+    .submit input {
+        padding: 1vw 7vw;
+    }
+}
+
+/*** PORTRAIT PHONES ***/
+
+@media (max-width: 575px) {
+    html {
+        font-size: 4vw;
+    }
+    
+    nav ul li p.nav {
+        font-size: 1rem;
+    }
+    
+    nav .toggle {
+        right: 3vw;
+    }
+    
+    .intro, .location-index, .about-index {
+        padding: 20vw 15vw;
+    }
+    
+    /*** LOCATION ***/
+    
+    .location .desc1 {
+        margin: 15vw 10vw 13vw;
+    }
+    
+    .location .flower1 {
+        width: 14vw;
+        left: 3.5vw;
+    }
+    
+    .location .desc2 {
+        margin: 0 5vw 12vw;
+    }
+    
+    .location .flower2 {
+        bottom: 8.5vw;
+        right: 3vw;
+    }
+    
+    .location .directions {
+        padding: 10vw 12vw 5vw;
+    }
+    
+    .location h2.question {
+        padding: 13vw 0;
+    }
+    
+    /*** ABOUT ***/
+    
+    .about .mural p, .about .project p {
+        padding: 0 10vw;
+    }
+    
+    .about .customers .middle {
+        padding: 25vw 10vw;
+    }
+    
+    .about .interiors {
+        padding: 0;
+    }
+    
+    .about .interiors p {
+        padding: 0 10vw;
+    }
+    
+    .about .interiors .logo {
+        width: 20vw;
+    }
+    
+    /*** CAREERS ***/
+    
+    .careers h2 {
+        padding: 0 5vw 10vw;
+    }
+    
+    .careers .row .content {
+        padding: 15vw;
+    }
+}
