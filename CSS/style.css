@@ -1699,9 +1699,10 @@ footer.second-footer {
     .menu .content h2 {
         margin-bottom: 6vw;
     }
-
-    p.footer {
+    
+    footer.second-footer {
         padding: 10vw 0;
+        background: none;
     }
     
     /*** LOCATION ***/
