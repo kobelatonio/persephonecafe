@@ -64,6 +64,11 @@ nav a.index-active:hover {
     color: #fff;
 }
 
+.index ul li a:hover, .index ul li .active {
+    color: #40C900;
+}
+
+
 .menu ul li a:hover, .menu ul li .active {
     color: #40C900;
 }
