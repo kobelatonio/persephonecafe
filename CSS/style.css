@@ -1048,7 +1048,7 @@ footer {
     gap: 1vw;
 }
 
-footer p, p.footer {
+footer p, h6.footer {
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     font-size: 0.6rem;
