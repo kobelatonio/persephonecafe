@@ -50,14 +50,11 @@ nav ul li a {
     font-size: 0.55rem;
     color: white;
     transition: all .4s ease;
+    font-weight: 500;
 }
 
 .menu ul li a, .location ul li a, .about ul li a, .careers ul li a, .contact ul li a {
     color: #1A1A1A;
-}
-
-nav a.active, nav ul li a:hover {
-    color: #FCEE21;
 }
 
 nav a.index-active:hover {
@@ -65,9 +62,8 @@ nav a.index-active:hover {
 }
 
 .index ul li a:hover, .index ul li .active {
-    color: #40C900;
+    color: #FCEE21;
 }
-
 
 .menu ul li a:hover, .menu ul li .active {
     color: #40C900;
@@ -1474,7 +1470,7 @@ footer.second-footer {
         padding: 2vw;
     }
     
-    nav ul li .logo {
+    nav ul li .logo, .intro .logo {
         width: 13vw;
     }
     
